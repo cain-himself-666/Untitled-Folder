@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/hi">हिंदी</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="seed-certification-detail">
+            <div>
+                <div class="seed-certificate-data">
+                    <div>Seedlot Number</div>
+                    <span><%=data.seedlotNumber%></span>
+                </div>
+                <div class="seed-certificate-data">
+                    <div>Certification Date</div>
+                    <span><%=data.certificationDate%></span>
+                </div>
+                <div class="seed-certificate-data">
+                    <div>Certificate Validity</div>
+                    <span><%=data.certificateValidity%></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="timeline-area">
+            <div class="timeline-phase">
+                <h2>Certification</h2>
+                <div class="timeline-phase-description">
+                    <div>
+                        Certification Authority : <%=data.certificationAuthority%>
+                    </div>
+                    <div>
+                        Date of Certification : <%=data.certificationDate%>
+                    </div>
+                    <!--div>
+                        <button>View Certificate</button>
+                    </div-->                    
+                </div>
+            </div>
+        <div class="timeline-phase">
+            <h2>Testing</h2>
+            <div class="timeline-phase-description">
+                <div>
+                    Testing Lab : <%=data.testingLab%>
+                </div>
+                <div>
+                    Date of Test : <%=data.dateOfTesting%>
+                </div>
+                <div>
+                    Test : <%=data.testResult%>
+                </div>
+                <!--div>
+                    <button>View Certificate</button>
+                </div-->                    
+            </div>
+        </div>
+
+            
+        <div class="timeline-phase">
+            <h2>Production</h2>
+            <div class="timeline-phase-description">
+                <div>
+                    Seed Production Agency : <%=data.productionAgency%>
+                </div>
+                <div>
+                    Date of Registration : <%=data.dateOfRegistration%>
+                </div>
+                <!--div>
+                    <button>View Certificate</button>
+                </div-->                    
+            </div>
+        </div>
+
+    
+        </section>
+    </body>
+</html>

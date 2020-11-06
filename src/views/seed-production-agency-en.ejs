@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>                        
+                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/hi">हिंदी</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+        
+        <div class="test-result-submit-container">
+            <form class="test-result-submit" action="/submit-seed-registration">                
+                <!--
+                    name, id, location, aadhaar, cropType, sgType
+                -->
+                Name
+                <input type="text" name="name">
+                Id
+                <input type="number" name="id">
+                Location
+                <input type="text" name="location">
+                Aadhaar
+                <input type="number" name="aadharNumber">
+                <div style="display: inline;">
+                    Crop Type
+                    <input type="radio" name="cropType" id="cropTypeKharif">
+                    <label for="cropTypeKharif">Kharif</label>
+                    <input type="radio" name="cropType" id="cropTypeRabi">
+                    <label for="cropTypeRabi">Rabi</label>
+                </div>
+                <div>
+                    Seed Grower Type
+                    <input type="radio" name="sgType" id="sgTypeIndividual" value="individual">
+                    <label for="sgTypeIndividual">Individual</label>
+                    <input type="radio" name="sgType" id="sgTypeGroup" value="group">
+                    <label for="sgTypeGroup">Group</label>                    
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

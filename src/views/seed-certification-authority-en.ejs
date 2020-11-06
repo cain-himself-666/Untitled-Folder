@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>                        
+                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/hi">हिंदी</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+        
+        <div class="test-result-submit-container">
+            <form class="test-result-submit" action="/submit-seed-certification" method="POST">                
+                <!--certBy
+                    cert_no, cert_by, seed_id
+                
+                <input type="text" name="certifier-name">-->
+                Seed Id
+                <input type="number" name="seedId">
+                Seed Lot
+                <input type="number" name="seedLot">
+                Certificate By
+                <input type="number" name="certificateBy">
+                Certification Number
+                <input type="number" name="certificationNumber">
+                Certification Date
+                <input type="date" id="testDate" name="certificationDate">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">Home</a></li>                        
+                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/hi">हिंदी</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="test-result-submit-container">
+            <form class="test-result-submit" action="/submit-test-result" method="POST">
+                <!--
+                    seed_id, secret code, result
+                -->                
+                <input type="text" class="secret-code" placeholder="Seed Id" name="seedId">
+                <input type="text" class="secret-code" placeholder="Secret Code" name="secretCode">
+                <span>Test result</span>
+                <input type="radio" id="passed" name="result" value="passed">
+                <label for="passed">Passed</label>
+                <input type="radio" id="failed" name="result" value="failed">
+                <label for="failed">Failed</label>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

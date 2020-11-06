@@ -1,0 +1,183 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+    background-color: #f9f9f9;;
+}
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+background-color: #111;
+}
+/*
+.active {
+    background-color: #4CAF50;
+}*/
+
+.menu {
+    float: right;
+}
+
+.test-result-submit-container {
+    width: 400px;
+}
+
+.trace-seed,
+.test-result-submit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.test-result-submit > span {
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.trace-seed > input,
+.test-result-submit > input {
+    width: 400px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#passed, #failed {
+    display: inline;
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.test-result-submit > label {
+    cursor: pointer;
+}
+
+.trace-seed > button,
+.test-result-submit > button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+}
+
+#testDateLabel, #testDate {
+    width: 200px;
+    display: inline;
+}
+
+#testDateLabel {
+    margin-right: 32px;
+}
+
+/*Seed Certificate*/
+.seed-certification-detail {
+    margin: 0px auto;
+    margin-top: 90px;
+    width: 480px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+}
+.seed-certification-detail > div  {
+    width: 400px;
+    margin: 0px auto;
+}
+.seed-certificate-data {
+    width: 400px;
+}
+.seed-certificate-data > div {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin: 0px;
+    margin-right: 20px;
+}
+/*
+.seed-certificate-data > span {
+   
+    text-align: center;
+}*/
+
+/*Seed Tracing*/
+.timeline-area {
+    margin: 0px auto;
+    margin-bottom: 90px;
+    width: 360px;
+    border-left: 2px solid #1d1d1d;
+    padding: 0 20px 0 30px;
+}
+.timeline-phase {
+    background-color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    /*border: 1px solid #1d1d1d;*/
+    line-height: 1.7;
+    position: relative;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.timeline-phase::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #000;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+.timeline-phase::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}

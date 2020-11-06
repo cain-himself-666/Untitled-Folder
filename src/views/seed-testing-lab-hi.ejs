@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">होम</a></li>                        
+                        <li><a href="/logout">लॉगआउट</a></li>
+                        <li><a href="/en">English</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="test-result-submit-container">
+            <form class="test-result-submit" action="/submit-test-result" method="POST">
+                <!--
+                    seed_id, secret code, result
+                -->                
+                <input type="text" class="secret-code" placeholder="बीज क्रम" name="seedId">
+                <input type="text" class="secret-code" placeholder="गुप्त कोड" name="secretCode">
+                <span>परीक्षा परिणाम</span>
+                <input type="radio" id="passed" name="result" value="passed">
+                <label for="passed">सफल</label>
+                <input type="radio" id="failed" name="result" value="failed">
+                <label for="failed">विफल</label>
+                <br>
+                <span id="testDateLabel">परीक्षा की तारीख</span>
+                <input type="date" id="testDate" name="testDate">
+                <button type="submit">दर्ज करे</button>
+            </form>
+        </div>
+    </body>
+</html>

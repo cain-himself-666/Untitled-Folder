@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hi">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">होम</a></li>                        
+                        <li><a href="/logout">लॉगआउट</a></li>
+                        <li><a href="/en">English</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+        
+        <div class="test-result-submit-container">
+            <form class="test-result-submit" action="/submit-seed-registration">                
+                <!--
+                    name, id, location, aadhaar, cropType, sgType
+                -->
+                नाम
+                <input type="text" name="name">
+                आईडी
+                <input type="number" name="id">
+                स्थान
+                <input type="text" name="location">
+                आधार
+                <input type="number" name="aadharNumber">
+                <div style="display: inline;">
+                    फसल का प्रकार
+                    <input type="radio" name="cropType" id="cropTypeKharif">
+                    <label for="cropTypeKharif">खरीफ</label>
+                    <input type="radio" name="cropType" id="cropTypeRabi">
+                    <label for="cropTypeRabi">रबी</label>
+                </div>
+                <div>
+                    बीज उगाने वाला
+                    <input type="radio" name="sgType" id="sgTypeIndividual" value="individual">
+                    <label for="sgTypeIndividual">व्यक्ति</label>
+                    <input type="radio" name="sgType" id="sgTypeGroup" value="group">
+                    <label for="sgTypeGroup">समूह</label>                    
+                </div>
+                
+                <button type="submit">दर्ज करे</button>
+            </form>
+        </div>
+    </body>
+</html>

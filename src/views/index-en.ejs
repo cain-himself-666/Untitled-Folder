@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seed Certification : Home</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">              
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/hi" id="lang">हिंदी</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="trace-seed-container">
+            <form class="trace-seed" action="/trace" method="GET">
+                <input type="text" name="seedId" placeholder="Seedlot Number">
+                <button type="submit">Trace</button>
+            </form>
+        </div>
+    </body>
+</html>

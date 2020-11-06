@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hi">
+    <head>
+        <title>Seed Certification</title>
+        <link href="./css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <div class="menu">
+                        <li><a href="/">होम</a></li>
+                        <li><a href="/en">English</a></li>
+                    </div>                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="seed-certification-detail">
+            <div>
+                <div class="seed-certificate-data">
+                    <div>सीदलोट संख्या</div>
+                    <span><%=data.seedlotNumber%></span>
+                </div>
+                <div class="seed-certificate-data">
+                    <div>प्रमाणपत्र दिनांक</div>
+                    <span><%=data.certificationDate%></span>
+                </div>
+                <div class="seed-certificate-data">
+                    <div>प्रमाणपत्र वैधता</div>
+                    <span><%=data.certificateValidity%></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="timeline-area">
+            <div class="timeline-phase">
+                <h2>प्रमाणीकरण</h2>
+                <div class="timeline-phase-description">
+                    <div>
+                        प्रमाणपत्र प्राधिकारी : <%=data.certificationAuthority%>
+                    </div>
+                    <div>
+                        प्रमाणपत्र दिनांक : <%=data.certificationDate%>
+                    </div>
+                    <!--div>
+                        <button>प्रमाणपत्र दिखाएं</button>
+                    </div-->                    
+                </div>
+            </div>
+        <div class="timeline-phase">
+            <h2>प्रमाणीकरण</h2>
+            <div class="timeline-phase-description">
+                <div>
+                    परीक्षण प्रयोगशाला : <%=data.testingLab%>
+                </div>
+                <div>
+                    परीक्षण की तारीख : <%=data.dateOfTesting%>
+                </div>
+                <div>
+                    परीक्षा परिणाम : <%=data.testResult%>
+                </div>
+                <!--div>
+                    <button>View Certificate</button>
+                </div-->                    
+            </div>
+        </div>
+
+            
+        <div class="timeline-phase">
+            <h2>Production</h2>
+            <div class="timeline-phase-description">
+                <div>
+                    बीज उत्पादन एजेंसी : <%=data.productionAgency%>
+                </div>
+                <div>
+                    पंजीकरण की तारीख : <%=data.dateOfRegistration%>
+                </div>
+                <!--div>
+                    <button>View Certificate</button>
+                </div-->                    
+            </div>
+        </div>
+
+    
+        </section>
+    </body>
+</html>

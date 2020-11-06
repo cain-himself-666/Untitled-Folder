@@ -1,0 +1,20 @@
+<body>
+    <table id="table" >  
+        <thead>  
+            <tr>  
+                <th>Username</th>  
+                <th>Password</th> 
+            </tr>  
+        </thead>  
+         <tbody>  
+         <% print.forEach(function (items) { %>
+            <tr>  
+                <td><%= items.username %></td>  
+                <td><%= items.password %></td>
+            </tr>                                   
+         <% }) %>
+         </tbody>
+    </table>   
+</body>
+
+</html>
